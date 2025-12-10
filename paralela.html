@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .campos {
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+<html lang="pt-br">
+    <link rel="stylesheet" href="paralela.css">
+
+<body>
+    <h1>Grocery Bud</h1>
+<div class="campos">
+    <input type="text" id="enviar" placeholder="adicione algum item"/>
+    <button onclick="adicionarItens()">Enviar</button>
+    <button onclick="excluirItens()">Excluir</button>
+</div>
+<div id="lista"></div>
+<script>
+    var itens = [];
+    function adicionarItens(){
+        alert('Item Adicionado!');
+
+    document.getElementById('enviar').value = '';
+    }
+
+    function excluirItens(){
+    alert('Itens Excluidos!');
+        document.getElementById('reset').value = ''
+    }
+
+    const input = document.getElementById('input');
+    const botao = document.getElementById('button');
+    const containerResultado = document.getElementById('resultadoContainer');
+    const textoDigitado = input.value;
+</script>
+
+</body>
+</html>
